@@ -1,0 +1,293 @@
+* {box-sizing: border-box;
+    font-family:'Poppins';
+}
+
+body {
+    margin: 0; /* menghapus margin default */
+}
+
+/* navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin:12px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /*biar ga repeat atau double image*/
+}
+
+.menu {
+    display: flex;
+}
+
+.menu > button {
+    background-color: whitesmoke;
+    padding: 12px 22px;
+    border: 1px solid #D5D7DD;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.menu > button:hover {
+    background-color: #2C2A6D;
+    color: white;
+}
+
+.menu > button:first-child { /* biar first child (home) border nya round */
+    border-radius: 4px 0px 0px 4px;
+}
+
+.menu > button:last-child { /* biar last child (call us) border nya round */
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* heading */
+.heading {
+    text-align: center;
+    margin: 32px 12px 0px 12px;
+}
+
+.heading > h1 {
+    color: #2C2A6D;
+}
+
+.heading > p {
+    color: grey;
+}
+
+/* content */
+.content {
+    margin: 0px 12px 0px 12px;
+    display: flex;
+    margin-top: 32px;
+}
+
+.left-content {
+    width: 70%;
+    margin-right: 8px;
+}
+
+.right-content {
+    width: 30%;
+}
+
+/* slide image */
+.slideshow-container {
+    position: relative;
+    margin:auto;
+}
+
+.mySlides {
+    width:100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #93AE06;
+}
+
+/* testimoni */
+.testimony > p  {
+    font-style: italic;
+    text-align: center;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;/*biar ga repeat atau double image*/
+}
+
+.customer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.customer-comment {
+    padding: 16px;
+}
+
+/* contact us */
+.contact-us {
+    width: 100%;
+    padding: 16px;
+    background-color: #F2F2F6;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+form > input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #F2F2F6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+
+}
+
+form > input[type=submit] {
+    width: 100%;
+    background-color: #2C2A6D;
+    color:#F2F2F6;
+    padding: 14px 20px;
+    border: 1px solid #F2F2F6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+
+}
+
+form > input[type=submit]:hover {
+    background-color: #3d3a96;
+    margin: 8px 0;
+
+}
+
+/* benefit */
+.benefit {
+    margin: 0px 12px 0px 12px;
+    display: flex;
+    margin-top: 32px;
+
+}
+
+.benefit-img {
+    width: 50%;
+}
+
+.benefit-img > img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.benefit-body {
+    width: 50%;
+}
+
+.check {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-color: #2c2a6d35;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;/*biar ga repeat atau double image*/
+}
+
+.benefit-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services {
+    font-size: small;
+    padding: 16px;
+}
+
+/* footer*/
+
+.footer {
+    display: flex;
+    padding: 0px 12px 0px 12px;
+    margin-top: 32px;
+    font-size: x-small;
+    background-color: #2C2A6D;
+    color: white;
+    box-sizing: border-box;
+    /* membuat lebar footer menutupi lebar layar */
+}
+
+.footer-1 {
+    padding-left: 12px;
+    width:25%;
+    line-height: 2.5;
+}
+
+.footer-2 {
+    padding-left: 12px;
+    width:25%;
+    line-height: 2.5;
+}
+
+.footer-3 {
+    padding-left: 12px;
+    width:25%;
+    line-height: 2.5;
+}
+
+.footer-4 {
+    align-content: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    width:25%;
+}
+
+.copyright {
+    padding: 12px;
+    background-color: #D5D7DD;
+    text-align: center;
+    font-size: x-small;
+}
+
+.copyright > span {
+    color: #2C2A6D;
+}
+
+.footer-img {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;/*biar ga repeat atau double image*/
+}
+
+.footer-address{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.address {
+    padding-left: 16px;
+    color: #c2df2f;
+}
